@@ -48,9 +48,9 @@ module.exports = {
                 if (images.length > 0) {
                     saveImage();
                 } else {
-                    var tempPath = req.file.path,
-                        ext = path.extname(req.file.name).toLowerCase(),
-                        targetPath = path.resolve(`./public/upload/${imgUrl}${ext}`);
+                    var tempPath = req.file.path; 
+                    var ext = path.extname(req.file.originalname).toLowerCase(); 
+                    var targetPath = path.resolve('./public/upload/' + imgUrl + ext);
 
                     if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif') {
                         fs.rename(tempPath, targetPath, (err)=>{
