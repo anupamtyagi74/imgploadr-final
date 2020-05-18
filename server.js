@@ -8,7 +8,7 @@ app.set('views', __dirname + '/views');
 
 app = config(app);
 
-mongoose.connect('mongodb://localhost/imgPloadr',{ useMongoClient: true} );
+mongoose.connect('mongodb://imgploadr-finaldb:Anuayu@1@ds215380.mlab.com:15380/heroku_0qmmwqj9',{ useMongoClient: true} );
 mongoose.connection.on('open',()=>{
     console.log('Mongoose connected.');
 });
