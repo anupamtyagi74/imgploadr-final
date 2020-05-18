@@ -2,6 +2,10 @@
   "name": "imgploadr-final",
   "version": "1.0.0",
   "description": "",
+   "engines": {
+    "node": "10.20.1",
+ 	 "npm": "6.14.5"
+  },
   "main": "server.js",
   "dependencies": {
     "async": "^1.0.0",
